@@ -1,0 +1,5 @@
+YAML: is cool!
+YAML INTEGER: 42
+YAML LIST:
+  - FOO
+  - BAR

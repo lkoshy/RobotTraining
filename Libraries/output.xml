@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170321 15:18:25.545" generator="Robot 3.0.2 (Python 3.5.2 on win32)">
+<suite name="Dynamic And Hybrid" id="s1" source="C:\Trainings\RobotTraining\Libraries\dynamic_and_hybrid.robot">
+<test name="Dynamic example" id="s1-t1">
+<kw library="DynamicLibrary" name="Dynamic Keyword">
+<doc>Documentation of keyword "Dynamic keyword".</doc>
+<msg level="INFO" timestamp="20170321 15:18:25.592">Executing keyword Dynamic keyword with arguments ()</msg>
+<status status="PASS" endtime="20170321 15:18:25.592" starttime="20170321 15:18:25.592"></status>
+</kw>
+<kw library="DynamicLibrary" name="Keyword With Arguments">
+<doc>Documentation of keyword "Keyword with arguments".</doc>
+<arguments>
+<arg>foo</arg>
+</arguments>
+<msg level="INFO" timestamp="20170321 15:18:25.592">Executing keyword Keyword with arguments with arguments ('foo',)</msg>
+<status status="PASS" endtime="20170321 15:18:25.592" starttime="20170321 15:18:25.592"></status>
+</kw>
+<kw library="DynamicLibrary" name="Keyword With Arguments">
+<doc>Documentation of keyword "Keyword with arguments".</doc>
+<arguments>
+<arg>bar</arg>
+</arguments>
+<msg level="INFO" timestamp="20170321 15:18:25.592">Executing keyword Keyword with arguments with arguments ('bar',)</msg>
+<status status="PASS" endtime="20170321 15:18:25.592" starttime="20170321 15:18:25.592"></status>
+</kw>
+<kw library="DynamicLibrary" name="Keyword With Arguments">
+<doc>Documentation of keyword "Keyword with arguments".</doc>
+<arguments>
+<arg>foo</arg>
+<arg>arg3=bar</arg>
+</arguments>
+<msg level="INFO" timestamp="20170321 15:18:25.592">Executing keyword Keyword with arguments with arguments ('foo', 'default', 'bar')</msg>
+<status status="PASS" endtime="20170321 15:18:25.592" starttime="20170321 15:18:25.592"></status>
+</kw>
+<status status="PASS" endtime="20170321 15:18:25.592" starttime="20170321 15:18:25.576" critical="yes"></status>
+</test>
+<test name="Hybrid example" id="s1-t2">
+<kw library="HybridLibrary" name="Hybrid Keyword">
+<status status="PASS" endtime="20170321 15:18:25.592" starttime="20170321 15:18:25.592"></status>
+</kw>
+<kw library="HybridLibrary" name="External Hybrid Keyword">
+<arguments>
+<arg>argh</arg>
+</arguments>
+<msg level="INFO" timestamp="20170321 15:18:25.592">Got arg argh</msg>
+<status status="PASS" endtime="20170321 15:18:25.592" starttime="20170321 15:18:25.592"></status>
+</kw>
+<status status="PASS" endtime="20170321 15:18:25.592" starttime="20170321 15:18:25.592" critical="yes"></status>
+</test>
+<status status="PASS" endtime="20170321 15:18:25.592" starttime="20170321 15:18:25.561"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" name="Dynamic And Hybrid" id="s1" pass="2">Dynamic And Hybrid</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

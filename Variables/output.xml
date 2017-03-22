@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170322 13:39:48.240" generator="Robot 3.0.2 (Python 3.5.2 on win32)">
+<suite id="s1" source="C:\Trainings\Robot\Variables\tests.robot" name="Tests">
+<test id="s1-t1" name="Scalar variables">
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${SCALAR}</arg>
+<arg>The value</arg>
+</arguments>
+<status endtime="20170322 13:39:48.271" status="PASS" starttime="20170322 13:39:48.271"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>==${SCALAR}==</arg>
+<arg>==The value==</arg>
+</arguments>
+<status endtime="20170322 13:39:48.271" status="PASS" starttime="20170322 13:39:48.271"></status>
+</kw>
+<kw library="BuiltIn" name="Convert To Integer">
+<doc>Converts the given item to an integer number.</doc>
+<arguments>
+<arg>42</arg>
+</arguments>
+<assign>
+<var>${integer}</var>
+</assign>
+<msg level="INFO" timestamp="20170322 13:39:48.271">${integer} = 42</msg>
+<status endtime="20170322 13:39:48.271" status="PASS" starttime="20170322 13:39:48.271"></status>
+</kw>
+<kw library="BuiltIn" name="Should Not Be Equal">
+<doc>Fails if the given objects are equal.</doc>
+<arguments>
+<arg>${integer}</arg>
+<arg>42</arg>
+</arguments>
+<msg level="INFO" timestamp="20170322 13:39:48.271">Argument types are:
+&lt;class 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status endtime="20170322 13:39:48.271" status="PASS" starttime="20170322 13:39:48.271"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal As Integers">
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<arguments>
+<arg>${integer}</arg>
+<arg>42</arg>
+</arguments>
+<msg level="INFO" timestamp="20170322 13:39:48.271">Argument types are:
+&lt;class 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status endtime="20170322 13:39:48.271" status="PASS" starttime="20170322 13:39:48.271"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>**${integer}**</arg>
+<arg>**42**</arg>
+</arguments>
+<status endtime="20170322 13:39:48.271" status="PASS" starttime="20170322 13:39:48.271"></status>
+</kw>
+<status endtime="20170322 13:39:48.271" status="PASS" starttime="20170322 13:39:48.271" critical="yes"></status>
+</test>
+<test id="s1-t2" name="List variables">
+<kw library="BuiltIn" name="Length Should Be">
+<doc>Verifies that the length of the given item is correct.</doc>
+<arguments>
+<arg>${LIST}</arg>
+<arg>3</arg>
+</arguments>
+<msg level="INFO" timestamp="20170322 13:39:48.286">Length is 3</msg>
+<status endtime="20170322 13:39:48.286" status="PASS" starttime="20170322 13:39:48.286"></status>
+</kw>
+<kw library="BuiltIn" name="Length Should Be">
+<doc>Verifies that the length of the given item is correct.</doc>
+<arguments>
+<arg>${LONG LIST}</arg>
+<arg>9</arg>
+</arguments>
+<msg level="INFO" timestamp="20170322 13:39:48.286">Length is 9</msg>
+<status endtime="20170322 13:39:48.286" status="PASS" starttime="20170322 13:39:48.286"></status>
+</kw>
+<kw library="BuiltIn" name="Log Many">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>@{LIST}</arg>
+</arguments>
+<msg level="INFO" timestamp="20170322 13:39:48.286">first item</msg>
+<msg level="INFO" timestamp="20170322 13:39:48.286">second item</msg>
+<msg level="INFO" timestamp="20170322 13:39:48.286">third item</msg>
+<status endtime="20170322 13:39:48.286" status="PASS" starttime="20170322 13:39:48.286"></status>
+</kw>
+<kw library="BuiltIn" name="Log Many">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>first item</arg>
+<arg>second item</arg>
+<arg>third item</arg>
+</arguments>
+<msg level="INFO" timestamp="20170322 13:39:48.286">first item</msg>
+<msg level="INFO" timestamp="20170322 13:39:48.286">second item</msg>
+<msg level="INFO" timestamp="20170322 13:39:48.286">third item</msg>
+<status endtime="20170322 13:39:48.286" status="PASS" starttime="20170322 13:39:48.286"></status>
+</kw>
+<kw library="BuiltIn" name="Create List">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>a</arg>
+<arg>b</arg>
+<arg>c</arg>
+</arguments>
+<assign>
+<var>${list1}</var>
+</assign>
+<msg level="INFO" timestamp="20170322 13:39:48.286">${list1} = ['a', 'b', 'c']</msg>
+<status endtime="20170322 13:39:48.286" status="PASS" starttime="20170322 13:39:48.286"></status>
+</kw>
+<kw library="BuiltIn" name="Create List">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>a</arg>
+<arg>b</arg>
+<arg>c</arg>
+</arguments>
+<assign>
+<var>@{list2}</var>
+</assign>
+<msg level="INFO" timestamp="20170322 13:39:48.286">@{list2} = [ a | b | c ]</msg>
+<status endtime="20170322 13:39:48.286" status="PASS" starttime="20170322 13:39:48.286"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${list1}</arg>
+<arg>${list2}</arg>
+</arguments>
+<status endtime="20170322 13:39:48.286" status="PASS" starttime="20170322 13:39:48.286"></status>
+</kw>
+<kw library="BuiltIn" name="Log Many">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>@{list1}</arg>
+<arg>@{list2}</arg>
+</arguments>
+<msg level="INFO" timestamp="20170322 13:39:48.286">a</msg>
+<msg level="INFO" timestamp="20170322 13:39:48.286">b</msg>
+<msg level="INFO" timestamp="20170322 13:39:48.286">c</msg>
+<msg level="INFO" timestamp="20170322 13:39:48.286">a</msg>
+<msg level="INFO" timestamp="20170322 13:39:48.286">b</msg>
+<msg level="INFO" timestamp="20170322 13:39:48.286">c</msg>
+<status endtime="20170322 13:39:48.286" status="PASS" starttime="20170322 13:39:48.286"></status>
+</kw>
+<status endtime="20170322 13:39:48.286" status="PASS" starttime="20170322 13:39:48.271" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Strings in multiple line">
+<kw library="BuiltIn" name="Log Many">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>${LONG STRING}</arg>
+<arg>${SEPARATOR}</arg>
+</arguments>
+<msg level="INFO" timestamp="20170322 13:39:48.286">This is so long string that I split this to two lines.</msg>
+<msg level="INFO" timestamp="20170322 13:39:48.286">This example illustrates using a
+custom separator. Now we
+have a multiline string
+This is the third row.</msg>
+<status endtime="20170322 13:39:48.286" status="PASS" starttime="20170322 13:39:48.286"></status>
+</kw>
+<status endtime="20170322 13:39:48.286" status="PASS" starttime="20170322 13:39:48.286" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Dictionary variables">
+<kw library="BuiltIn" name="Length Should Be">
+<doc>Verifies that the length of the given item is correct.</doc>
+<arguments>
+<arg>${DICT}</arg>
+<arg>3</arg>
+</arguments>
+<msg level="INFO" timestamp="20170322 13:39:48.286">Length is 3</msg>
+<status endtime="20170322 13:39:48.286" status="PASS" starttime="20170322 13:39:48.286"></status>
+</kw>
+<kw library="BuiltIn" name="Log Many">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>&amp;{DICT}</arg>
+</arguments>
+<msg level="INFO" timestamp="20170322 13:39:48.286">key=value</msg>
+<msg level="INFO" timestamp="20170322 13:39:48.286">foo=bar</msg>
+<msg level="INFO" timestamp="20170322 13:39:48.286">list=['first item', 'second item', 'third item']</msg>
+<status endtime="20170322 13:39:48.286" status="PASS" starttime="20170322 13:39:48.286"></status>
+</kw>
+<status endtime="20170322 13:39:48.286" status="PASS" starttime="20170322 13:39:48.286" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Accessing list and dict items">
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>@{LIST}[0]</arg>
+<arg>first item</arg>
+</arguments>
+<status endtime="20170322 13:39:48.302" status="PASS" starttime="20170322 13:39:48.302"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>@{LIST}[1]</arg>
+<arg>second item</arg>
+</arguments>
+<status endtime="20170322 13:39:48.302" status="PASS" starttime="20170322 13:39:48.302"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>&amp;{DICT}[key]</arg>
+<arg>value</arg>
+</arguments>
+<status endtime="20170322 13:39:48.302" status="PASS" starttime="20170322 13:39:48.302"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>&amp;{DICT}[list]</arg>
+<arg>${LIST}</arg>
+</arguments>
+<status endtime="20170322 13:39:48.302" status="PASS" starttime="20170322 13:39:48.302"></status>
+</kw>
+<status endtime="20170322 13:39:48.302" status="PASS" starttime="20170322 13:39:48.286" critical="yes"></status>
+</test>
+<test id="s1-t6" name="Built-in variables">
+<kw library="BuiltIn" name="Should Be Empty">
+<doc>Verifies that the given item is empty.</doc>
+<arguments>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg level="INFO" timestamp="20170322 13:39:48.302">Length is 0</msg>
+<status endtime="20170322 13:39:48.302" status="PASS" starttime="20170322 13:39:48.302"></status>
+</kw>
+<kw library="BuiltIn" name="Length Should Be">
+<doc>Verifies that the length of the given item is correct.</doc>
+<arguments>
+<arg>${SPACE}</arg>
+<arg>1</arg>
+</arguments>
+<msg level="INFO" timestamp="20170322 13:39:48.302">Length is 1</msg>
+<status endtime="20170322 13:39:48.302" status="PASS" starttime="20170322 13:39:48.302"></status>
+</kw>
+<kw library="BuiltIn" name="Log Many">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>${TEMPDIR}</arg>
+<arg>${EXECDIR}</arg>
+<arg>C:\\Trainings\\Robot\\Variables</arg>
+</arguments>
+<msg level="INFO" timestamp="20170322 13:39:48.302">C:\Users\lisa\AppData\Local\Temp</msg>
+<msg level="INFO" timestamp="20170322 13:39:48.302">C:\Trainings\Robot\Variables</msg>
+<msg level="INFO" timestamp="20170322 13:39:48.302">C:\Trainings\Robot\Variables</msg>
+<status endtime="20170322 13:39:48.302" status="PASS" starttime="20170322 13:39:48.302"></status>
+</kw>
+<status endtime="20170322 13:39:48.302" status="PASS" starttime="20170322 13:39:48.302" critical="yes"></status>
+</test>
+<test id="s1-t7" name="Numbers, Boolean and None">
+<kw library="BuiltIn" name="Convert To Integer">
+<doc>Converts the given item to an integer number.</doc>
+<arguments>
+<arg>42</arg>
+</arguments>
+<assign>
+<var>${integer}</var>
+</assign>
+<msg level="INFO" timestamp="20170322 13:39:48.302">${integer} = 42</msg>
+<status endtime="20170322 13:39:48.302" status="PASS" starttime="20170322 13:39:48.302"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${integer}</arg>
+<arg>${42}</arg>
+</arguments>
+<status endtime="20170322 13:39:48.302" status="PASS" starttime="20170322 13:39:48.302"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal As Numbers">
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<arguments>
+<arg>${3.14}</arg>
+<arg>3.14</arg>
+</arguments>
+<msg level="INFO" timestamp="20170322 13:39:48.302">Argument types are:
+&lt;class 'float'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status endtime="20170322 13:39:48.302" status="PASS" starttime="20170322 13:39:48.302"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${1e6}</arg>
+<arg>${1000 000}</arg>
+</arguments>
+<msg level="INFO" timestamp="20170322 13:39:48.302">Argument types are:
+&lt;class 'float'&gt;
+&lt;class 'int'&gt;</msg>
+<status endtime="20170322 13:39:48.302" status="PASS" starttime="20170322 13:39:48.302"></status>
+</kw>
+<status endtime="20170322 13:39:48.302" status="PASS" starttime="20170322 13:39:48.302" critical="yes"></status>
+</test>
+<test id="s1-t8" name="Automatic variables">
+<kw library="BuiltIn" name="Log Many">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>@{TEST TAGS}</arg>
+</arguments>
+<msg level="INFO" timestamp="20170322 13:39:48.302">example</msg>
+<msg level="INFO" timestamp="20170322 13:39:48.302">tags</msg>
+<status endtime="20170322 13:39:48.302" status="PASS" starttime="20170322 13:39:48.302"></status>
+</kw>
+<kw library="BuiltIn" type="teardown" name="Log Many">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>${TEST STATUS}</arg>
+<arg>${TEST MESSAGE}</arg>
+</arguments>
+<msg level="INFO" timestamp="20170322 13:39:48.302">PASS</msg>
+<msg level="INFO" timestamp="20170322 13:39:48.302"></msg>
+<status endtime="20170322 13:39:48.302" status="PASS" starttime="20170322 13:39:48.302"></status>
+</kw>
+<doc>Robot documentation</doc>
+<tags>
+<tag>example</tag>
+<tag>tags</tag>
+</tags>
+<status endtime="20170322 13:39:48.302" status="PASS" starttime="20170322 13:39:48.302" critical="yes"></status>
+</test>
+<test id="s1-t9" name="Variable scopes 1">
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${SCALAR}</arg>
+<arg>The value</arg>
+</arguments>
+<status endtime="20170322 13:39:48.318" status="PASS" starttime="20170322 13:39:48.318"></status>
+</kw>
+<kw library="BuiltIn" name="Set Variable">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>new value</arg>
+</arguments>
+<assign>
+<var>${scalar}</var>
+</assign>
+<msg level="INFO" timestamp="20170322 13:39:48.318">${scalar} = new value</msg>
+<status endtime="20170322 13:39:48.318" status="PASS" starttime="20170322 13:39:48.318"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${SCALAR}</arg>
+<arg>new value</arg>
+</arguments>
+<status endtime="20170322 13:39:48.318" status="PASS" starttime="20170322 13:39:48.318"></status>
+</kw>
+<kw name="scalar variable value should be">
+<arguments>
+<arg>The value</arg>
+</arguments>
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${SCALAR}</arg>
+<arg>${expected}</arg>
+</arguments>
+<status endtime="20170322 13:39:48.318" status="PASS" starttime="20170322 13:39:48.318"></status>
+</kw>
+<status endtime="20170322 13:39:48.318" status="PASS" starttime="20170322 13:39:48.318"></status>
+</kw>
+<kw library="BuiltIn" name="Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${SCALAR}</arg>
+</arguments>
+<msg level="INFO" timestamp="20170322 13:39:48.318">${SCALAR} = new value</msg>
+<status endtime="20170322 13:39:48.318" status="PASS" starttime="20170322 13:39:48.318"></status>
+</kw>
+<kw library="BuiltIn" name="Set Suite Variable">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${NEW VARIABLE}</arg>
+<arg>New variable in suite scope</arg>
+</arguments>
+<msg level="INFO" timestamp="20170322 13:39:48.318">${NEW VARIABLE} = New variable in suite scope</msg>
+<status endtime="20170322 13:39:48.318" status="PASS" starttime="20170322 13:39:48.318"></status>
+</kw>
+<kw library="BuiltIn" name="Set Global Variable">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${GLOBAL}</arg>
+<arg>Global variable are also seen by other suites</arg>
+</arguments>
+<msg level="INFO" timestamp="20170322 13:39:48.318">${GLOBAL} = Global variable are also seen by other suites</msg>
+<status endtime="20170322 13:39:48.318" status="PASS" starttime="20170322 13:39:48.318"></status>
+</kw>
+<status endtime="20170322 13:39:48.318" status="PASS" starttime="20170322 13:39:48.302" critical="yes"></status>
+</test>
+<test id="s1-t10" name="Variable scopes 2">
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${SCALAR}</arg>
+<arg>The value</arg>
+</arguments>
+<status endtime="20170322 13:39:48.318" status="PASS" starttime="20170322 13:39:48.318"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${NEW VARIABLE}</arg>
+<arg>New variable in suite scope</arg>
+</arguments>
+<status endtime="20170322 13:39:48.318" status="PASS" starttime="20170322 13:39:48.318"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${GLOBAL}</arg>
+<arg>Global variable are also seen by other suites</arg>
+</arguments>
+<status endtime="20170322 13:39:48.318" status="PASS" starttime="20170322 13:39:48.318"></status>
+</kw>
+<status endtime="20170322 13:39:48.318" status="PASS" starttime="20170322 13:39:48.318" critical="yes"></status>
+</test>
+<test id="s1-t11" name="Extended variable syntax">
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${OBJECT.name}</arg>
+<arg>John</arg>
+</arguments>
+<status endtime="20170322 13:39:48.333" status="PASS" starttime="20170322 13:39:48.333"></status>
+</kw>
+<kw library="BuiltIn" name="Length Should Be">
+<doc>Verifies that the length of the given item is correct.</doc>
+<arguments>
+<arg>${OBJECT.num}</arg>
+<arg>4</arg>
+</arguments>
+<msg level="INFO" timestamp="20170322 13:39:48.333">Length is 4</msg>
+<status endtime="20170322 13:39:48.333" status="PASS" starttime="20170322 13:39:48.333"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${OBJECT.greet('Lisa')}</arg>
+<arg>John says hello to Lisa.</arg>
+</arguments>
+<status endtime="20170322 13:39:48.333" status="PASS" starttime="20170322 13:39:48.333"></status>
+</kw>
+<status endtime="20170322 13:39:48.333" status="PASS" starttime="20170322 13:39:48.318" critical="yes"></status>
+</test>
+<test id="s1-t12" name="Accessing dict values using extended variable syntax">
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${DICT.key}</arg>
+<arg>&amp;{DICT}[key]</arg>
+</arguments>
+<status endtime="20170322 13:39:48.333" status="PASS" starttime="20170322 13:39:48.333"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${DICT.list}</arg>
+<arg>&amp;{DICT}[list]</arg>
+</arguments>
+<status endtime="20170322 13:39:48.333" status="PASS" starttime="20170322 13:39:48.333"></status>
+</kw>
+<kw library="BuiltIn" name="Log Many">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>@{DICT.list}</arg>
+</arguments>
+<msg level="INFO" timestamp="20170322 13:39:48.333">first item</msg>
+<msg level="INFO" timestamp="20170322 13:39:48.333">second item</msg>
+<msg level="INFO" timestamp="20170322 13:39:48.333">third item</msg>
+<status endtime="20170322 13:39:48.333" status="PASS" starttime="20170322 13:39:48.333"></status>
+</kw>
+<status endtime="20170322 13:39:48.333" status="PASS" starttime="20170322 13:39:48.333" critical="yes"></status>
+</test>
+<status endtime="20170322 13:39:48.333" status="PASS" starttime="20170322 13:39:48.240"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="12" fail="0">Critical Tests</stat>
+<stat pass="12" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">example</stat>
+<stat pass="1" fail="0">tags</stat>
+</tag>
+<suite>
+<stat pass="12" id="s1" fail="0" name="Tests">Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

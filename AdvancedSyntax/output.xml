@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170322 15:31:32.143" generator="Robot 3.0.2 (Python 3.5.2 on win32)">
+<suite name="Conditional Log" source="C:\Trainings\Robot\AdvancedSyntax\conditional_log.robot" id="s1">
+<test name="Run keyword if" id="s1-t1">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>7 &gt; 5</arg>
+<arg>Log</arg>
+<arg>the expression was true!</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>the expression was true!</arg>
+</arguments>
+<msg timestamp="20170322 15:31:32.174" level="INFO">the expression was true!</msg>
+<status endtime="20170322 15:31:32.174" starttime="20170322 15:31:32.174" status="PASS"></status>
+</kw>
+<status endtime="20170322 15:31:32.174" starttime="20170322 15:31:32.174" status="PASS"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>7 &lt; 5</arg>
+<arg>Fail</arg>
+<arg>the expression was true!</arg>
+</arguments>
+<status endtime="20170322 15:31:32.174" starttime="20170322 15:31:32.174" status="PASS"></status>
+</kw>
+<status endtime="20170322 15:31:32.174" critical="yes" starttime="20170322 15:31:32.174" status="PASS"></status>
+</test>
+<test name="Run keyword if/unless" id="s1-t2">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>7 &gt; 5</arg>
+<arg>Log</arg>
+<arg>the expression was true!</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>the expression was true!</arg>
+</arguments>
+<msg timestamp="20170322 15:31:32.174" level="INFO">the expression was true!</msg>
+<status endtime="20170322 15:31:32.174" starttime="20170322 15:31:32.174" status="PASS"></status>
+</kw>
+<status endtime="20170322 15:31:32.174" starttime="20170322 15:31:32.174" status="PASS"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>7 &gt; 5</arg>
+<arg>Log</arg>
+<arg>the expression was not true!</arg>
+</arguments>
+<status endtime="20170322 15:31:32.174" starttime="20170322 15:31:32.174" status="PASS"></status>
+</kw>
+<status endtime="20170322 15:31:32.174" critical="yes" starttime="20170322 15:31:32.174" status="PASS"></status>
+</test>
+<test name="Run keyword If with ELSE" id="s1-t3">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>7 &gt; 5</arg>
+<arg>Log</arg>
+<arg>The exp was true!</arg>
+<arg>ELSE</arg>
+<arg>Log</arg>
+<arg>The exp ws not true!</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>The exp was true!</arg>
+</arguments>
+<msg timestamp="20170322 15:31:32.174" level="INFO">The exp was true!</msg>
+<status endtime="20170322 15:31:32.190" starttime="20170322 15:31:32.174" status="PASS"></status>
+</kw>
+<status endtime="20170322 15:31:32.190" starttime="20170322 15:31:32.174" status="PASS"></status>
+</kw>
+<status endtime="20170322 15:31:32.190" critical="yes" starttime="20170322 15:31:32.174" status="PASS"></status>
+</test>
+<status endtime="20170322 15:31:32.190" starttime="20170322 15:31:32.143" status="PASS"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Conditional Log" pass="3" id="s1" fail="0">Conditional Log</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
